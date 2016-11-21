@@ -24,6 +24,7 @@
     	<mysql.version>5.1.38</mysql.version>   
     	<mybatis.spring.version>1.3.0</mybatis.spring.version>
     	<lombok.version>1.16.10</lombok.version>
+    	<shiro.version>1.3.2</shiro.version>
   	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -87,6 +88,21 @@
 			  	<artifactId>lombok</artifactId>
 			  	<version>${lombok.version}</version>
 			</dependency>
+			<dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-web</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
 			
 			
 			<!-- springframework dependency -->
